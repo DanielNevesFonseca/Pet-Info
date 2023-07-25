@@ -1,0 +1,102 @@
+:root {
+  --brand100: #374fc8;
+  --brand200: #3a55d9;
+  --gray100: #22262a;
+  --gray200: #353b41;
+  --gray300: #484f56;
+  --gray400: #878f97;
+  --gray500: #adb5bd;
+  --gray600: #eaedf0;
+  --gray700: #f0f2f4;
+  --gray800: #f9fafb;
+  --gray900: #fafdff;
+  --alert100: #c83751;
+  --alert200: #db3d5a;
+  --sucess100: #087d5a;
+
+  --font-size-title-1: 2.5rem;
+  --font-size-title-2: 2rem;
+  --font-size-title-3: 1.5rem;
+  --font-size-text-1: 1rem;
+  --font-size-text-2: 0.875rem;
+  --font-size-text-3: 0.75rem;
+
+  --font-weight-bold: 600;
+  --font-weight-regular: 500;
+  --font-weight-light: 300;
+
+  --line-height-title: 150%;
+}
+
+
+body {
+  font-family: "Inter, sans-serif";
+  min-height: 99dvh;
+  max-width: 99dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+dialog {
+  border: 0;
+  width: 48rem;
+  max-height: 80vh;
+  border-radius: 1rem;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.brand-color {
+  color: var(--brand100);
+}
+
+.hidden {
+  display: none;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-top: 2px solid var(--brand100);
+  align-self: center;
+
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.call-to-action-text {
+  color: var(--gray400);
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--gray300);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--brand100);
+}

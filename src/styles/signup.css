@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 20%;
+}
+
+.main__info {
+  width: 25rem;
+  height: fit-content;
+  max-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.info__description2 {
+  color: var(--gray400);
+}
+
+.main__register {
+  width: 22rem;
+  max-width: 30rem;
+  padding: 2.625rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+  flex-wrap: wrap;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.625rem;
+}

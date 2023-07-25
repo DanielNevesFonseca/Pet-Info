@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Daniel Neves Fonseca">
+  <meta name="description" content="O site ideal para você cuidar melhor do seu pet.">
+  <title>Sua Dashboard</title>
+  <link rel="shortcut icon" href="../../src/assets/icons/icon-tab.svg" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="../styles/globalStyles.css">
+  <link rel="stylesheet" href="../styles/buttons.css">
+  <link rel="stylesheet" href="../styles/texts.css">
+  <link rel="stylesheet" href="../styles/form.css">
+  <link rel="stylesheet" href="../styles/modal.css">
+  <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+
+<body>
+  <header class="header">
+    <h2 class="header__logo title-2">PetInfo</h2>
+    <div class="container-info">
+      <button class="new-post-button confirm__button">Criar Publicação</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main__posts">
+      <h3 class="title-3 section__title">Feed</h3>
+      <ul class="posts__container"></ul>
+    </section>
+  </main>
+
+  <dialog class="modal__controller--logout">
+    <div class="modal__container--logout">
+      <button class="close-modal-button close-cancel__button">X</button>
+      <p class="text-1 username-logged">@user</p>
+      <button class="logout-button alert__button">Sair da Conta</button>
+    </div>
+  </dialog>
+
+  <dialog class="modal__controller--create-post">
+    <div class="modal__container--create-post">
+      <h3 class="title-3">Criando novo post</h3>
+      <button class="close-modal-button close-cancel__button">X</button>
+      <div class="form-group">
+        <label for="post-title">Título do post</label>
+        <input class="create__post" name="title" type="text" placeholder="Digite o título aqui" id="title">
+      </div>
+      <div class="form-group">
+        <label for="post-content">Contéudo do post</label>
+        <textarea class="create__post" name="content" id="post-content"
+          placeholder="Desenvolva o conteúdo do post aqui..."></textarea>
+      </div>
+      <div class="buttons-group">
+        <button class="publish-button confirm__button">Publicar</button>
+        <button class="cancel-button close-cancel__button">Cancelar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal__controller--read-post">
+    <div class="modal__container--read-post"></div>
+  </dialog>
+
+  <dialog  class="modal__controller--delete-post">
+    <div class="modal__container--delete-post">
+      <button class="close-modal-button close-cancel__button">X</button>
+      <h3 class="title-3">Confirmação de Exclusão</h3>
+      <div class="info-group">
+        <h2 class="title-2">Tem certeza que deseja excluir este post?</h2>
+        <p class="text-1">Essa ação não poderá ser desfeita, então pedimos que tenha cautela antes de concluir...</p>
+      </div>
+      <div class="buttons-group">
+        <button class="cancel-button close-cancel__button">Cancelar</button>
+        <button class="remove alert__button">Sim! Excluir esse post</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="modal__controller--update-post">
+    <div class="modal__container--update-post">
+      <h3 class="title-3">Edição</h3>
+      <button class="close-modal-button close-cancel__button">X</button>
+      <div class="form-group">
+        <label for="post-title">Título do post</label>
+        <input class="update__post" name="title" type="text" placeholder="Digite o título aqui" id="title">
+      </div>
+      <div class="form-group">
+        <label for="post-content">Contéudo do post</label>
+        <textarea class="update__post" name="content" id="post-content"
+          placeholder="Desenvolva o conteúdo do post aqui..."></textarea>
+      </div>
+      <div class="buttons-group">
+        <button class="cancel-button close-cancel__button">Cancelar</button>
+        <button class="save confirm__button">Salvar Alterações</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script type="module" defer src="../scripts/dashboard.js"></script>
+</body>
+
+</html>

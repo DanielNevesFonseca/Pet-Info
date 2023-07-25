@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Daniel Neves Fonseca">
+  <meta name="description" content="O site ideal para você cuidar melhor do seu pet.">
+  <title>Cadastro</title>
+  <link rel="shortcut icon" href="../../src/assets/icons/icon-tab.svg" type="image/x-icon">
+  <!-- styles -->
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="../styles/globalStyles.css">
+  <link rel="stylesheet" href="../styles/buttons.css">
+  <link rel="stylesheet" href="../styles/texts.css">
+  <link rel="stylesheet" href="../styles/form.css">
+  <link rel="stylesheet" href="../styles/signup.css">
+</head>
+
+<body>
+
+  <main class="main">
+
+    <section class="main__register">
+      <form class="register__form">
+        <h3 class="title-3">Cadastro</h3>
+
+        <div class="form-group">
+          <label for="username-register">Usuário</label>
+          <input name="username" class="register-input" autocomplete="off" id="username-register" type="text" placeholder="Digite seu usuário aqui">
+        </div>
+        <div class="form-group">
+          <label for="email-register">E-mail</label>
+          <input name="email" class="register-input" autocomplete="off" id="email-register" type="email" placeholder="Digite seu email aqui">
+        </div>
+        <div class="form-group">
+          <label for="photo-register">Link da foto de Perfil</label>
+          <input name="avatar" class="register-input" autocomplete="off" id="photo-register" type="text" placeholder="Insira o link aqui">
+        </div>
+        <div class="form-group">
+          <label for="password-register">Senha</label>
+          <input name="password" class="register-input" autocomplete="off" id="password-register" type="password" placeholder="Digite sua senha aqui">
+        </div>
+        <button class="confirm__button" type="submit">Cadastrar</button>
+      </form>
+      <button class="redirect-edit__button">Voltar para o login</button>
+      <div class="spinner hidden"></div>
+    </section>
+
+    <section class="main__info">
+      <h2 class="info__logo title-2">PetInfo</h2>
+      <h2 class="info__description title-2 "> <span class="brand-color">Ooooooba!</span></h2>
+      <p class="text-1 info__description2">Agora vamos poder contribuir para o bem estar do seu pet por meio do
+        conhecimento</p>
+      <img src="../assets/images/img-register.svg" alt="vários animais pets.">
+    </section>
+
+  </main>
+
+  <!-- JavaScript -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="../scripts/signup.js" type="module"></script>
+
+</body>
+
+</html>
